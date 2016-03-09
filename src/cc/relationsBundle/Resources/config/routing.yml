@@ -1,0 +1,15 @@
+ccrelations_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: ccrelationsBundle:Default:index }
+
+main:
+    path:   /
+    defaults:  { _controller:  ccrelationsBundle:Default:newSalarie }
+    
+trouverOrdi:
+    path: /{nom}
+    defaults:  {_controller: ccrelationsBundle:Default:getPcFromSalarie}
+    
+trouverSalarie:
+    path:  /ordi/{nom}
+    defaults:  {_controller: ccrelationsBundle:Default:getSalarieFromPc}
